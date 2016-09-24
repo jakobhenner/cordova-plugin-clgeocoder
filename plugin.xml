@@ -10,7 +10,7 @@
         <param name="ios-package" value="CLGeocoderPlugin" />
       </feature>
     </config-file>
-    <source-file src="CLGeocoderPlugin.m" />
+    <source-file src="src/ios/CLGeocoderPlugin.m" />
     <framework src="CoreLocation.framework" />
     <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
       <string></string>
