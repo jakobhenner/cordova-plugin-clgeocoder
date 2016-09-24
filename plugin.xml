@@ -4,16 +4,21 @@
   <js-module name="CLGeocoderPlugin" src="www/geocoder.js">
     <clobbers target="navigator.geocoder" />
   </js-module>
+
   <platform name="ios">
     <config-file target="config.xml" parent="/*">
       <feature name="CLGeocoderPlugin">
         <param name="ios-package" value="CLGeocoderPlugin" />
       </feature>
     </config-file>
+
+    <header-file src="src/ios/CLGeocoderPlugin.h" />
     <source-file src="src/ios/CLGeocoderPlugin.m" />
+
     <framework src="CoreLocation.framework" />
     <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
       <string></string>
     </config-file>
   </platform>
+  
 </plugin>
